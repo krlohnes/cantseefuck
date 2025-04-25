@@ -87,7 +87,7 @@ Looks empty?
 ### 🧰 How to Use
 
 1. Clone the repo  
-2. Paste your CantSeeFuck masterpiece into a `.cfs` file  
+2. Paste your CantSeeFuck masterpiece into a `.csf` file  
 3. Run it through the interpreter
 4. Wonder where your life went wrong
 
@@ -106,7 +106,7 @@ Looks empty?
 
 - IDE crashes  
 - Terminal existentialism  
-- Complete disassociation
+- Turing complete disassociation
 
 ---
 
