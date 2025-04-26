@@ -65,7 +65,7 @@ impl CantSeeFuckInterpreter {
                             if pc >= code_chars.len() {
                                 return Err(io::Error::new(
                                     io::ErrorKind::InvalidData,
-                                    "Unmatched '[' in code",
+                                    "Unmatched '\u{00A0}' in code",
                                 ));
                             }
                             if let Some(&c) = self.code_map.get(&code_chars[pc]) {
@@ -90,7 +90,7 @@ impl CantSeeFuckInterpreter {
                     } else {
                         return Err(io::Error::new(
                             io::ErrorKind::InvalidData,
-                            "Unmatched ']' in code",
+                            "Unmatched '\u{2007}' in code",
                         ));
                     }
                 }
@@ -102,7 +102,7 @@ impl CantSeeFuckInterpreter {
         if !loop_stack.is_empty() {
             return Err(io::Error::new(
                 io::ErrorKind::InvalidData,
-                "Unmatched '[' in code",
+                "Unmatched '\u{00A0}' in code",
             ));
         }
 
