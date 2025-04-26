@@ -41,12 +41,12 @@ That's right: **you literally can't see fuck.**
 
 ### 🔍 Character Mapping
 
-| Brainfuck | CantSeeFuck         | Unicode Name              |
+| Brainfuck | CantSeeFuck         | Unicode Name               |
 |-----------|---------------------|----------------------------|
 | `>`       | ` `                 | U+0020 SPACE               |
 | `<`       | `\t`                | U+0009 CHARACTER TAB       |
 | `+`       | `\n`                | U+000A LINE FEED           |
-| `-`       | `\x0C`              | U+000C FORM FEED           |
+| `-`       | `\u{2063}`          | U+2063 INVISIBLE SEPARATOR |
 | `.`       | `\r`                | U+000D CARRIAGE RETURN     |
 | `,`       | `\x0B`              | U+000B VERTICAL TAB        |
 | `[`       | `\u{00A0}`          | U+00A0 NON-BREAKING SPACE  |
