@@ -30,10 +30,9 @@ Why write:
 ```
 When you could write:
 ```
-
- 	
-  	
-
+ 
+ ⁣	
+ 
 ```
 
 That's right: **you literally can't see fuck.**
@@ -74,9 +73,8 @@ Because nothing says *“elite programming”* like confusing your terminal, you
 
 
 
-	  
- 
-
+	⁣  
+
 ```
 
 Looks empty?  

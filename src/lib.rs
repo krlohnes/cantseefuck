@@ -15,12 +15,11 @@ impl Default for CantSeeFuckInterpreter {
         code_map.insert(' ', '>'); // Map space to '>'
         code_map.insert('\t', '<'); // Map tab to '<'
         code_map.insert('\n', '+'); // Map newline to '+'
-        code_map.insert('\x0C', '-'); // Map form feed to '-'
+        code_map.insert('\u{2063}', '-'); // Map invisible separator to '-'
         code_map.insert('\r', '.'); // Map carriage return to '.'
         code_map.insert('\x0B', ','); // Map vertical tab to ','
         code_map.insert('\u{00A0}', '['); // Map non-breaking space to '['
         code_map.insert('\u{2007}', ']'); // Map figure space to ']'
-
         CantSeeFuckInterpreter {
             memory: vec![0; 30_000],
             pointer: 0,
@@ -119,8 +118,7 @@ mod test {
     #[test]
     pub fn simple_test() -> io::Result<()> {
         let mut interpreter = CantSeeFuckInterpreter::default();
-        let program =
-            std::fs::read_to_string("test_resources/simple_program.csf").unwrap();
+        let program = std::fs::read_to_string("test_resources/simple_program.csf").unwrap();
         assert_stdout_eq!(interpreter.interpret(&program)?, "1\n6\n5\n");
         Ok(())
     }
